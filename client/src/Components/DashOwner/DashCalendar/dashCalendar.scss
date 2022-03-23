@@ -1,0 +1,98 @@
+.sidebar {
+  //   position: fixed;
+    width: 300px;
+    height: 800px;
+    background: #AAC9DD;
+    font-size: 12px;
+    padding-left: -550px;
+    
+  }
+  
+  .nav {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+  .fa-solid{
+    margin-left:-250px;
+  }
+  .dash-icon {
+    list-style: none;
+   
+    
+    .dash-item{
+    // position: relative;
+    margin-left:-130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    
+    
+      
+      a {
+        
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgba(rgb(255, 255, 255), 0.35);
+        display: block;
+        transition: all ease-out 300ms;
+      }
+      
+      &.active a {
+        color: #4F77AA;
+      }
+      
+      &:not(.active)::after {
+        opacity: 0.2;
+      }
+      
+      &:not(.active):hover a {
+        color: rgba(#FFF, 0.75);
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        background: black;
+        background-image: linear-gradient(to right, #AAC9DD, #C1E3ED)
+      }
+    }
+  }
+
+
+  .MyCalendar{
+    width:1200px;
+    
+  }
+
+ .Calendar-Container{
+   display: flex;
+ }
+
+ .add-event-button{
+   padding-left:50px;
+ }
+.startDate, .endDate , .title{
+  margin-left:600px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color:#4F77AA;
+  font-weight: bold;
+}
+
+.inputTitle{
+  width:1320px;
+  border: "solid";
+  height:40px;
+  
+}
+
+.add-event-modal{
+  margin-left: 600px;
+  
+}
+
+ 
